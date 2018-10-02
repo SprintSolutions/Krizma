@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/statusbar</item>
+    </style>
+
+
+    <!--<style name="ToolbarColored" parent="AppTheme">-->
+        <!--<item name="android:textColorSecondary">#fff</item>-->
+    <!--</style>-->
+    <!--<style name="MyButton" parent="Base.Widget.AppCompat.Button">-->
+        <!--<item name="android:colorButtonNormal" tools:ignore="NewApi"> @color/colorPrimary</item>-->
+        <!--<item name="android:textAllCaps">false</item>-->
+        <!--<item name="android:textColor">#fff</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="MobiComAppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="android:actionBarStyle">@style/ApplozicActionBar</item>-->
+        <!--<item name="actionBarStyle">@style/ApplozicActionBar</item>-->
+        <!--&lt;!&ndash; Set AppCompat’s color theming attrs &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/mobitexter_main_color</item>-->
+        <!--<item name="colorPrimaryDark">@color/primary_dark_color</item>-->
+        <!--<item name="colorAccent">@color/holo_blue</item>-->
+
+        <!--&lt;!&ndash;-->
+                <!--<item name="android:actionDropDownStyle">@style/actionDropDownStyle</item>-->
+                <!--<item name="actionDropDownStyle">@style/actionDropDownStyle</item> &ndash;&gt;-->
+
+    <!--</style>-->
+
+</resources>

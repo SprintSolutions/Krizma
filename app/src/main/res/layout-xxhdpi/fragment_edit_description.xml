@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.Profile.EditDescribeFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/edit_profile_describe_label"
+            android:text="Describe Yourself"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="#3a3a3a"
+            android:layout_alignStart="@id/edit_profile_describe_txt"
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/edit_profile_optional_txt"
+            android:layout_marginTop="180dp"
+            android:textStyle="italic"
+            android:text="(Optional)"
+            android:layout_alignBottom="@id/edit_profile_describe_label"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="11sp"
+            android:textColor="#ff0065"
+            android:layout_alignEnd="@id/edit_profile_describe_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_profile_describe_txt"
+            android:paddingBottom="100dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/profile_textarea_bg"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="15sp"
+            android:inputType="textCapWords"
+            android:textColor="#434343"
+            android:textCursorDrawable="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

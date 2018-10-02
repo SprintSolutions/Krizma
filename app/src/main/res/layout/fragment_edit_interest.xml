@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.Profile.EditInterestFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/edit_profile_interest_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/edit_profile_language_txt"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="You are Interested in"
+            android:textColor="#3a3a3a"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/edit_profile_language_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/edit_profile_language_txt"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:labelFor="@id/edit_profile_language_txt"
+            android:text="Languages"
+            android:textColor="@color/customBlack"
+            android:textSize="15sp" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/edit_profile_language_txt"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="#434343"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/profile_input_bg" />
+
+        <TextView
+            android:id="@+id/edit_profile_genre_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/edit_profile_language_txt"
+            android:layout_below="@id/edit_profile_language_txt"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Genre"
+            android:textColor="@color/customBlack"
+            android:textSize="15sp" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/edit_profile_genre_txt"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#434343"
+            android:textCursorDrawable="@null"
+            android:layout_below="@id/edit_profile_genre_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/profile_input_bg" />
+
+        <TextView
+            android:id="@+id/edit_profile_author_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/edit_profile_language_txt"
+            android:layout_below="@id/edit_profile_genre_txt"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Author"
+            android:textColor="@color/customBlack"
+            android:textSize="15sp" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/edit_profile_author_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="15sp"
+            android:textColor="#434343"
+            android:layout_below="@id/edit_profile_author_label"
+            android:layout_centerHorizontal="true"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/profile_input_bg" />
+
+
+        <TextView
+            android:id="@+id/edit_profile_book_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/edit_profile_language_txt"
+            android:layout_below="@id/edit_profile_author_txt"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Type"
+            android:textColor="@color/customBlack"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/edit_profile_type_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edit_profile_book_label"
+            android:layout_toStartOf="@+id/edit_profile_type_used"
+            android:background="@null"
+            android:src="@drawable/profile_new_deactive" />
+
+        <ImageButton
+            android:id="@+id/edit_profile_type_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edit_profile_type_both"
+            android:layout_toLeftOf="@id/edit_profile_type_both"
+            android:background="@null"
+            android:src="@drawable/profile_used_deactive" />
+
+
+        <ImageButton
+            android:id="@+id/edit_profile_type_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edit_profile_author_txt"
+            android:layout_alignTop="@+id/edit_profile_type_new"
+            android:background="@null"
+            android:src="@drawable/profile_both_active" />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

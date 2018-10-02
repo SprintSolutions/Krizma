@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.AdvanceSearchActivity"
+    android:background="@color/white"
+    android:id="@+id/search_advance_activity">
+
+
+    <Toolbar
+        android:id="@+id/main_toolbar"
+        android:textAlignment="center"
+        android:background="@drawable/main_header_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/adv_search_toolbar_txt"
+        android:text="BROWSE"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/adv_search_back_btn"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/adv_search_back_arrow"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/adv_search_search_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:text="Search"
+        android:layout_marginTop="20dp"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/adv_search_location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/customBlack"
+        android:textSize="15sp"
+        android:layout_below="@id/main_toolbar"
+        android:layout_marginLeft="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/adv_search_location"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@id/adv_search_location_label"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/adv_search_location_label"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/adv_search_near_btn"
+        android:background="@null"
+        android:button="@drawable/adv_search_radio_inactive"
+        android:layout_marginLeft="20dp"
+        android:textSize="13sp"
+        android:text="Near Me"
+        android:textColor="#585858"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:id="@+id/adv_search_other_btn"
+        android:background="@null"
+        android:button="@drawable/adv_search_radio_active"
+        android:layout_marginLeft="20dp"
+        android:textSize="13sp"
+        android:textColor="#585858"
+        android:checked="true"
+        android:text="Other Location"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/adv_search_country_txt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/adv_search_country_txt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/adv_search_dropdown_bg"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Area"
+        android:focusable="false"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/adv_search_country_txt"
+        android:background="@drawable/adv_search_dropdown_icon_bg"
+        android:layout_below="@id/adv_search_location_label"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="10sp"
+        android:spinnerMode="dropdown"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/adv_search_city_txt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/adv_search_city_txt"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:focusable="false"
+        android:background="@drawable/adv_search_dropdown_bg"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Area"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/adv_search_city_txt"
+        android:background="@drawable/adv_search_dropdown_icon_bg"
+        android:layout_below="@id/adv_search_country_txt"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:textCursorDrawable="@null"
+        android:paddingRight="10dp"
+        android:textSize="13sp"
+        android:hint="All Cities"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/adv_search_area_txt"
+        android:background="@drawable/adv_search_dropdown_bg"
+        android:layout_below="@id/adv_search_city_txt"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="13sp"
+        android:textCursorDrawable="@null"
+        android:hint="Area"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/adv_search_grey"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:src="#eeeeee"
+        android:layout_below="@+id/adv_search_area_txt"/>
+
+    <TextView
+        android:id="@+id/adv_search_language_label"
+        android:text="Language"
+        android:layout_below="@id/adv_search_grey"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#585858"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hootsuite.nachos.NachoTextView
+        android:id="@+id/adv_search_language_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adv_search_language_label"
+        android:layout_below="@+id/adv_search_language_label"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/adv_search_dropdown_bg"
+        android:fontFamily="@font/montserrat_regular"
+        android:paddingLeft="10dp"
+        app:chipTextColor="#434343"
+        app:chipTextSize="15sp" />
+
+    <ImageView
+        android:id="@+id/adv_search_grey_2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:src="#eeeeee"
+        android:layout_below="@+id/adv_search_language_txt"/>
+
+    <TextView
+        android:id="@+id/adv_search_genre_label"
+        android:text="Genre"
+        android:layout_below="@id/adv_search_grey_2"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#585858"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hootsuite.nachos.NachoTextView
+        android:id="@+id/adv_search_genre_txt"
+        android:layout_below="@id/adv_search_genre_label"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/adv_search_dropdown_bg"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        app:chipTextColor="#434343"
+        app:chipTextSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/adv_search_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

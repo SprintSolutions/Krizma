@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.SettingsActivity"
+    android:id="@+id/settings_activity">
+
+    <Toolbar
+        android:id="@+id/setting_toolbar"
+        android:background="@drawable/main_header_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/setting_toolbar_txt"
+        android:text="SETTINGS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/setting_back_btn"
+        android:src="@drawable/settings_back_arrow"
+        android:background="@null"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_notification"
+        android:layout_below="@id/setting_toolbar"
+        android:drawableLeft="@drawable/settings_notification"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textAlignment="viewStart"
+        android:textColor="#3a3a3a"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Notifications"
+        android:layout_marginLeft="20dp"
+        android:layout_marginVertical="10dp"
+        android:drawablePadding="10dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/setting_notification_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setting_notification"
+        android:layout_alignBottom="@+id/setting_notification"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+    <ImageView
+        android:layout_below="@id/setting_notification"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_invite"
+        android:layout_below="@id/setting_notification"
+        android:drawableLeft="@drawable/settings_invite"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginVertical="10dp"
+        android:textColor="#3a3a3a"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Invite your friends"
+        android:textAlignment="viewStart"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/settings_arrow"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <ImageView
+        android:layout_below="@id/setting_invite"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_about"
+        android:layout_below="@id/setting_invite"
+        android:drawableLeft="@drawable/settings_about"
+        android:textSize="17sp"
+        android:textColor="#3a3a3a"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginVertical="10dp"
+        android:text="About"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="textStart"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/settings_arrow"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/setting_about"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_help"
+        android:layout_below="@id/setting_about"
+        android:drawableLeft="@drawable/settings_help_center"
+        android:textSize="17sp"
+        android:textColor="#3a3a3a"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="20dp"
+        android:drawableRight="@drawable/settings_arrow"
+        android:paddingRight="20dp"
+        android:text="Help Center"
+        android:textAlignment="textStart"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_below="@id/setting_help"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_feedback"
+        android:layout_below="@id/setting_help"
+        android:drawableLeft="@drawable/settings_feedback"
+        android:textSize="17sp"
+
+        android:textColor="#3a3a3a"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Feedback"
+        android:drawableRight="@drawable/settings_arrow"
+        android:paddingRight="20dp"
+        android:textAlignment="textStart"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/setting_feedback"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_rate"
+        android:layout_below="@id/setting_feedback"
+        android:drawableLeft="@drawable/settings_rate_this_app"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="#3a3a3a"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Rate the App"
+        android:drawableRight="@drawable/settings_arrow"
+        android:paddingRight="20dp"
+        android:layout_marginVertical="10dp"
+        android:textAlignment="viewStart"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/setting_rate"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_privacy"
+        android:layout_below="@id/setting_rate"
+        android:drawableLeft="@drawable/settings_privacy_policy"
+        android:textSize="17sp"
+        android:textColor="#3a3a3a"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Privacy Policy"
+        android:drawableRight="@drawable/settings_arrow"
+        android:paddingRight="20dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="textStart"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_below="@id/setting_privacy"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setting_logout"
+        android:layout_below="@id/setting_privacy"
+        android:drawableLeft="@drawable/settings_logout"
+        android:textSize="17sp"
+        android:textColor="#3a3a3a"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Logout"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="textStart"
+        android:layout_marginVertical="10dp"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/setting_logout"
+        android:src="@drawable/settings_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

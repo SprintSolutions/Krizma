@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_corner_list"
+    android:id="@+id/search_list_layout">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/list_image"
+        android:src="@drawable/search_profile_pic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:riv_corner_radius="5dp"/>
+
+    <ImageView
+        android:id="@+id/list_favourite_btn"
+        android:src="@drawable/search_favourite_inactive_btn"
+        android:background="@null"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/customBlack"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="William Jones"
+        android:drawableEnd="@drawable/search_center_border"
+        android:drawablePadding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/list_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_name"
+        android:layout_toEndOf="@+id/list_name"
+        android:layout_marginLeft="8dp"
+        android:text="34km"
+        android:drawableRight="@drawable/search_distance_icon"
+        android:textColor="#7b7b7b"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/list_age_label"
+        android:layout_below="@id/list_name"
+        android:layout_toRightOf="@id/list_image"
+        android:layout_marginLeft="10dp"
+        android:text="Age:"
+        android:textSize="11sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#585858"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/list_age_txt"
+        android:layout_below="@id/list_name"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_toRightOf="@id/list_age_label"
+        android:layout_marginLeft="5dp"
+        android:text="25"
+        android:textSize="11sp"
+        android:textColor="@color/customBlack"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/list_gender_label"
+        android:layout_below="@id/list_name"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_toRightOf="@id/list_age_txt"
+        android:layout_marginLeft="10dp"
+        android:text="Gender:"
+        android:textSize="11sp"
+        android:textColor="#585858"
+        android:layout_marginTop="2dp"
+        android:drawableStart="@drawable/search_center_border"
+        android:drawablePadding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/list_gender_txt"
+        android:layout_below="@id/list_name"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_toRightOf="@id/list_gender_label"
+        android:layout_marginLeft="5dp"
+        android:text="Male"
+        android:textSize="11sp"
+        android:textColor="@color/customBlack"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/list_location_txt"
+        android:drawableLeft="@drawable/search_location_icon"
+        android:layout_below="@id/list_age_label"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_toRightOf="@id/list_image"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="2dp"
+        android:text="Melbourne, Australia"
+        android:textSize="11sp"
+        android:textColor="@color/customBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/list_see_more"
+        android:textSize="11sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_below="@id/list_location_txt"
+        android:textColor="@color/blue"
+        android:text="see more..."
+        android:layout_alignStart="@id/list_age_label"
+        android:layout_marginTop="2dp"
+        android:paddingTop="5dp"
+        android:drawablePadding="120dp"
+        android:drawableEnd="@drawable/search_plus_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/list_more_data"
+        android:visibility="gone"
+        android:layout_below="@id/list_see_more"
+        android:layout_width="wrap_content"
+        android:layout_alignStart="@id/list_see_more"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/list_language_label"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/customBlack"
+            android:textSize="11sp"
+            android:text="Language:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/list_language_txt"
+            android:textColor="@color/listGrey"
+            android:layout_below="@id/list_language_label"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:text="English, Spanish, Romanian"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/search_border"/>
+
+        <TextView
+            android:id="@+id/list_genre_label"
+            android:layout_below="@id/list_language_txt"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/customBlack"
+            android:textSize="11sp"
+            android:text="Genre:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/list_genre_txt"
+            android:textColor="@color/listGrey"
+            android:layout_below="@id/list_genre_label"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:text="Drama, Fiction, Biography"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/search_border"/>
+
+        <TextView
+            android:id="@+id/list_author_label"
+            android:layout_below="@id/list_genre_txt"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/customBlack"
+            android:textSize="11sp"
+            android:text="Favourite Author:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/list_author_txt"
+            android:textColor="@color/listGrey"
+            android:layout_below="@id/list_author_label"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:text="Drama, Fiction, Biography"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/search_border"/>
+
+        <TextView
+            android:id="@+id/list_books_label"
+            android:layout_below="@id/list_author_txt"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/customBlack"
+            android:textSize="11sp"
+            android:text="Favourite Books:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/list_books_txt"
+            android:textColor="@color/listGrey"
+            android:layout_below="@id/list_books_label"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:text="Drama, Fiction, Biography"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:drawableBottom="@drawable/search_border"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/search_progress"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/statusbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

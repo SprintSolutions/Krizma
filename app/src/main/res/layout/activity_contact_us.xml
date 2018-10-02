@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.ContactUsActivity">
+
+    <Toolbar
+        android:id="@+id/contact_us_toolbar"
+        android:background="@drawable/main_header_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/contact_us_toolbar_txt"
+        android:text="CONTACT US"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/contact_us_back_btn"
+        android:src="@drawable/settings_back_arrow"
+        android:background="@null"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/contact_us_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_us_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:inputType="textCapWords"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        android:hint="Name"
+        android:paddingLeft="10dp"
+        android:background="@drawable/profile_input_bg" />
+
+    <EditText
+        android:id="@+id/contact_us_email_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contact_us_name_txt"
+        android:layout_below="@+id/contact_us_name_txt"
+        android:layout_marginTop="15dp"
+        android:textCursorDrawable="@null"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:hint="Email.."
+        android:paddingLeft="10dp"
+        android:background="@drawable/profile_input_bg" />
+
+    <EditText
+        android:id="@+id/profile_describe_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contact_us_email_txt"
+        android:layout_below="@+id/contact_us_email_txt"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/profile_textarea_bg"
+        android:fontFamily="@font/montserrat_regular"
+        android:inputType="textCapWords"
+        android:paddingBottom="100dp"
+        android:paddingLeft="10dp"
+        android:textColor="#434343"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/profile_describe_txt"
+        android:layout_below="@+id/profile_describe_txt"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:src="@drawable/contact_us_send" />
+
+
+
+</RelativeLayout>

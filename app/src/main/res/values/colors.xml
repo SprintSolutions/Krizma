@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#a5a5a5</color>
+    <color name="black">#000000</color>
+    <color name="blue">#1f97f3</color>
+    <color name="customBlack">#3a3a3a</color>
+    <color name="customGrey">#7b7b7b</color>
+    <color name="listGrey">#585858</color>
+    <color name="statusbar">#1979C2</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="applozic_message_search_text_color" tools:override="true">#FF4081</color>
+
+
+</resources>

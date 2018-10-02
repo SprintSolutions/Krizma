@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.Profile.BooksFragment"
+    android:background="@color/white"
+    android:id="@+id/books_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profile_books_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/profile_book_name_txt"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Books you have"
+            android:textColor="#3a3a3a"
+            android:textSize="15sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_book_btn"
+            android:src="@drawable/profile_add_pic_btn"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_width="74dp"
+            android:layout_height="74dp" />
+
+        <TextView
+            android:id="@+id/profile_book_btn_label"
+            android:layout_centerHorizontal="true"
+            android:text="Tap to add picture"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/profile_book_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/profile_book_name_txt"
+            android:background="@drawable/profile_input_bg"
+            android:layout_centerHorizontal="true"
+            android:inputType="textCapWords"
+            android:layout_below="@id/profile_book_btn_label"
+            android:layout_marginTop="10dp"
+            android:hint="Name"
+            android:textColor="#434343"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/profile_book_author_txt"
+            android:background="@drawable/profile_input_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile_book_name_txt"
+            android:hint="Author"
+            android:layout_marginTop="10dp"
+            android:textColor="#434343"
+            android:paddingLeft="10dp"
+            android:inputType="textCapWords"
+            android:textCursorDrawable="@null"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/profile_book_language_txt"
+            android:hint="Languages"
+            android:paddingLeft="10dp"
+            android:background="@drawable/profile_input_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile_book_author_txt"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#434343"
+            android:textSize="15sp"
+            android:inputType="textCapWords"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/profile_book_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/profile_book_language_txt"
+            android:layout_below="@id/profile_book_language_txt"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Type"
+            android:textColor="@color/customBlack"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/profile_book_type_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profile_book_label"
+            android:layout_toStartOf="@+id/profile_book_type_used"
+            android:background="@null"
+            android:src="@drawable/profile_new_deactive" />
+
+        <ImageButton
+            android:id="@+id/profile_book_type_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/profile_book_type_both"
+            android:layout_toLeftOf="@id/profile_book_type_both"
+            android:background="@null"
+            android:src="@drawable/profile_used_deactive" />
+
+
+        <ImageButton
+            android:id="@+id/profile_book_type_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/profile_book_language_txt"
+            android:layout_alignTop="@+id/profile_book_label"
+            android:background="@null"
+            android:src="@drawable/profile_both_active" />
+
+
+        <ImageButton
+            android:id="@+id/profile_add_books"
+            android:src="@drawable/profile_add_book_btn"
+            android:background="@null"
+            android:layout_below="@+id/profile_book_type_both"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/profile_book_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:indeterminateTint="@color/statusbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</FrameLayout>

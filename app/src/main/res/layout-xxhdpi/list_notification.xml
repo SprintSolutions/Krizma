@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/list_notification_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/notification_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/notification_user"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/notification_pic"
+        />
+
+    <TextView
+        android:id="@+id/notification_user"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#3a3a3a"
+        android:layout_toRightOf="@id/list_notification_image"
+        android:layout_marginLeft="20dp"
+        android:textSize="13sp"
+        android:text="Alisa Mike"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/notification_type"
+        android:layout_toRightOf="@id/notification_user"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="13sp"
+        android:textColor="#727272"
+        android:text="send a message"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_below="@+id/notification_user"
+        android:layout_toRightOf="@id/list_notification_image"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="12sp"
+        android:textColor="#585858"
+        android:text="When he's not off making one of his..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_toRightOf="@id/list_notification_image"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/notification"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="#868585"
+        android:textSize="10sp"
+        android:text="5 min ago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/notification_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/notification"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/notification_arrow" />
+
+    <ImageView
+        android:layout_below="@id/list_notification_image"
+        android:src="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</RelativeLayout>

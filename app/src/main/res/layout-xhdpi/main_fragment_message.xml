@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.Main.MessageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/chat_search"
+            android:background="@drawable/chat_search_bg"
+            android:drawableLeft="@drawable/chat_search_icon"
+            android:hint="Search for messages and users"
+            android:textColorHint="#95BCF7"
+            android:paddingStart="80dp"
+            android:drawablePadding="10dp"
+            android:paddingRight="60dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_list"
+            android:layout_below="@id/chat_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

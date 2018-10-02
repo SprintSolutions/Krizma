@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/chat_list_layout">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/chat_image"
+        android:src="@drawable/chat_dummy_profile_pic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/chat_name"
+        android:layout_alignTop="@id/chat_image"
+        android:layout_toRightOf="@id/chat_image"
+        android:layout_marginLeft="10dp"
+        android:textColor="#1f97f3"
+        android:text="Alisa Mike"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/chat_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/chat_name"
+        android:textColor="#1c1721"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="11:53"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"/>
+
+    <ImageView
+        android:id="@+id/chat_sent_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/chat_time"
+        android:layout_marginEnd="27dp"
+        android:paddingTop="3dp"
+        android:src="@drawable/chat_seen" />
+
+    <TextView
+        android:id="@+id/chat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chat_image"
+        android:layout_alignStart="@+id/chat_name"
+        android:layout_toStartOf="@+id/chat_time"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="When he's not off making one of his beautifully idiosyncratic films, the "
+        android:textColor="#1c1721"
+        android:textSize="12sp" />
+
+</RelativeLayout>

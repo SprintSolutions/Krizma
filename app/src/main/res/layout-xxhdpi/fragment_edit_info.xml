@@ -1,0 +1,299 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sprint.krizma.Profile.EditInfoFragment"
+    android:background="@color/white"
+    android:id="@+id/info_fragment">
+
+    <ScrollView
+        android:id="@+id/edit_profile_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/edit_profile_top_bg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/blue" />
+
+
+
+            <ImageView
+                android:id="@+id/edit_profile_pic"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/user_profile_dummy_pic" />
+
+            <ImageView
+                android:id="@+id/edit_profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:src="@drawable/profile_camera_icon" />
+
+            <EditText
+                android:id="@+id/edit_profile_name_txt"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingLeft="10dp"
+                android:textCursorDrawable="@null"
+                android:inputType="textCapWords"
+                android:textColor="#434343"
+                android:hint="Name"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/edit_profile_top_bg"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/profile_input_bg" />
+
+            <TextView
+                android:id="@+id/edit_status_txt"
+                android:textSize="15sp"
+                android:textColor="#3a3a3a"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_profile_name_txt"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/edit_profile_gender_txt"
+                android:text="Status" />
+
+            <ImageButton
+                android:id="@+id/edit_profile_status_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/edit_profile_name_txt"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:src="@drawable/profile_individual_select_btn" />
+
+
+            <TextView
+                android:id="@+id/edit_profile_gender_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_profile_status_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Gender"
+                android:textColor="#3a3a3a"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15sp"/>
+
+            <RadioGroup
+                android:id="@+id/edit_profile_gender"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_profile_status_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/edit_profile_gender_txt">
+
+            <RadioButton
+                android:id="@+id/edit_profile_male_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_profile_status_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="13sp"
+                android:textColor="#585858"
+                android:layout_toRightOf="@id/edit_profile_gender_txt"
+                android:background="@null"
+                android:button="@drawable/profile_radio_inactive"
+                android:text="Male" />
+
+
+            <RadioButton
+                android:id="@+id/edit_profile_female_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_profile_status_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="13sp"
+                android:textColor="#585858"
+                android:layout_toRightOf="@id/edit_profile_male_btn"
+                android:button="@drawable/profile_radio_inactive"
+                android:checked="false"
+                android:text="Female" />
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/edit_profile_age_txt"
+                android:background="@drawable/profile_input_bg"
+                android:layout_centerHorizontal="true"
+                android:hint="Age"
+                android:textColor="#434343"
+                android:inputType="number"
+                android:layout_below="@id/edit_profile_gender_txt"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null"
+                />
+
+            <ImageView
+                android:src="@drawable/profile_shadow_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edit_profile_age_txt"/>
+
+            <ImageView
+                android:id="@+id/edit_profile_grey"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:src="#eeeeee"
+                android:layout_below="@+id/edit_profile_age_txt"/>
+
+
+            <TextView
+                android:id="@+id/edit_profile_location_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_profile_grey"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:textColor="#3a3a3a"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginTop="10dp"
+                android:text="Location"
+                />
+
+            <RadioGroup
+                android:id="@+id/edit_profile_location"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/edit_profile_grey"
+                android:layout_toRightOf="@id/edit_profile_gender_txt"
+                >
+
+            <RadioButton
+                android:id="@+id/edit_profile_near_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_profile_grey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="13sp"
+                android:textColor="#585858"
+                android:layout_toRightOf="@id/edit_profile_gender_txt"
+                android:background="@null"
+                android:button="@drawable/profile_radio_inactive"
+                android:text="Near By" />
+
+
+            <RadioButton
+                android:id="@+id/edit_profile_other_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_profile_grey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="13sp"
+                android:textColor="#585858"
+                android:button="@drawable/profile_radio_inactive"
+                android:checked="false"
+                android:text="Other Location" />
+
+            </RadioGroup>
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_profile_country_txt"
+                android:background="@drawable/profile_input_bg"
+                android:layout_centerHorizontal="true"
+                android:inputType="textCapWords"
+                android:layout_below="@id/edit_profile_location_txt"
+                android:layout_marginTop="10dp"
+                android:hint="Country"
+                android:textColor="#434343"
+                android:textCursorDrawable="@null"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_profile_city_txt"
+                android:background="@drawable/profile_input_bg"
+                android:layout_centerHorizontal="true"
+                android:inputType="textCapWords"
+                android:layout_below="@id/edit_profile_country_txt"
+                android:hint="City"
+                android:textCursorDrawable="@null"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="#434343"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_profile_area_txt"
+                android:hint="Area"
+                android:paddingLeft="10dp"
+                android:inputType="textCapWords"
+                android:background="@drawable/profile_input_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/edit_profile_city_txt"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#434343"
+                android:textCursorDrawable="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/profile_shadow_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edit_profile_area_txt"/>
+
+
+            <ImageView
+                android:id="@+id/edit_profile_grey2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:src="#eeeeee"
+                android:layout_below="@+id/edit_profile_area_txt"/>
+
+            <!--<ImageView-->
+            <!--android:layout_below="@id/profile_grey2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp" />-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

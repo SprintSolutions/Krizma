@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_corner_list"
+    android:id="@+id/list_book_background">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/list_book_image"
+        android:src="@drawable/search_profile_pic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:riv_corner_radius="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/list_book_favourite_btn"
+        android:src="@drawable/search_favourite_inactive_btn"
+        android:background="@null"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/list_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_book_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/customBlack"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Book Name"
+        />
+
+
+
+    <TextView
+        android:id="@+id/list_book_language"
+        android:layout_below="@id/list_book_name"
+        android:layout_toRightOf="@id/list_book_image"
+        android:layout_marginLeft="10dp"
+        android:text="Language:"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#585858"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/list_book_language_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/list_book_language"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_book_language"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="English"
+        android:textColor="@color/customBlack"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/list_book_author"
+        android:layout_below="@id/list_book_language"
+        android:layout_toRightOf="@id/list_book_image"
+        android:layout_marginLeft="10dp"
+        android:text="Author:"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#585858"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/list_book_author_txt"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_toRightOf="@id/list_book_author"
+        android:layout_marginLeft="5dp"
+        android:text="Matt"
+        android:textSize="11sp"
+        android:textColor="@color/customBlack"
+        android:layout_alignBottom="@id/list_book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ProgressBar
+        android:id="@+id/list_book_progress"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/statusbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

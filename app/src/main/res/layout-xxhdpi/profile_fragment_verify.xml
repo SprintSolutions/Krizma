@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sprint.krizma.Profile.VerifyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/verify_bg"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/blue" />
+
+        <ImageView
+            android:id="@+id/verify_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:background="@null"
+            android:src="@drawable/verify_icon" />
+
+        <TextView
+            android:id="@+id/verify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingHorizontal="20dp"
+            android:text="Enter the 4 digit code we sent you \n via email to continue"
+            android:textAlignment="center"
+            android:textColor="#585858"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/verify_ch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_text"
+            android:textColor="#434343"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textCursorDrawable="@null"
+            android:textAlignment="center"
+            android:background="@null"
+            android:drawableBottom="@drawable/verify_border"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="60sp" />
+
+
+        <EditText
+            android:id="@+id/verify_ch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#434343"
+            android:textCursorDrawable="@null"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/verify_ch1"
+            android:background="@null"
+            android:drawableBottom="@drawable/verify_border"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="60sp" />
+
+
+        <EditText
+            android:id="@+id/verify_ch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#434343"
+            android:layout_toRightOf="@id/verify_ch2"
+            android:background="@null"
+            android:textCursorDrawable="@null"
+            android:drawableBottom="@drawable/verify_border"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="60sp" />
+
+
+        <EditText
+            android:id="@+id/verify_ch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/verify_ch3"
+            android:background="@null"
+            android:textColor="#434343"
+            android:textCursorDrawable="@null"
+            android:drawableBottom="@drawable/verify_border"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/verify_expire_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_ch1"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="code expires in:"
+            android:textColor="#585858"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/verify_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/verify_expire_txt"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verify_expire_txt"
+            android:fontFamily="@font/opensans_regular"
+            android:text="0:43"
+            android:textColor="#e33737"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/verify_no_code_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_expire_txt"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="49dp"
+            android:layout_toStartOf="@+id/verify_timer"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Didn't get the code?"
+            android:textColor="#585858"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/verify_resend_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/verify_no_code_txt"
+            android:layout_alignBottom="@+id/verify_no_code_txt"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:text="Resend code"
+            android:textColor="#1f97f3"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/profile_verify_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:indeterminateTint="@color/statusbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</FrameLayout>

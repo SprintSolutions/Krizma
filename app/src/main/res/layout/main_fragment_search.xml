@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sprint.krizma.Main.SearchFragment"
+    android:background="@color/white"
+    android:id="@+id/search_fragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/search_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/adv_search_bg"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="5dp"
+            android:maxLines="1"
+            android:paddingLeft="35dp"
+            android:textCursorDrawable="@null" />
+
+        <Spinner
+            android:id="@+id/search_txt_label"
+            android:layout_width="wrap_content"
+            android:dropDownWidth="match_parent"
+            android:background="@drawable/advance_spinner"
+            android:spinnerMode="dialog"
+            android:layout_toRightOf="@+id/search_txt"
+            android:layout_height="32dp"
+            android:layout_marginEnd="20dp"
+            android:popupBackground="@color/blue"
+            android:layout_alignParentRight="true"
+            android:dropDownVerticalOffset="33dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/dropdownIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="37dp"
+            android:background="@null"
+            android:src="@drawable/adv_search_dropdown" />
+
+
+        <ImageButton
+            android:id="@+id/search_advance_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/search_txt"
+            android:layout_below="@id/search_txt"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/search_advance_btn" />
+
+        <TextView
+            android:id="@+id/search_label_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/search_advance_btn"
+            android:layout_below="@id/search_advance_btn"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Sort by:"
+            android:textColor="@color/customBlack"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/search_near_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_advance_btn"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/search_label_txt"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Near"
+            android:textColor="@color/blue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/search_recommended_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_advance_btn"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_near_txt"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Recommended"
+            android:textColor="@color/customGrey"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/search_divider"
+            android:src="@drawable/search_center_border"
+            android:layout_toRightOf="@id/search_near_txt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="13dp"
+            android:layout_alignBottom="@id/search_recommended_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh"
+            android:layout_marginTop="10dp"
+            android:layout_alignEnd="@+id/search_txt_label"
+            android:layout_alignStart="@id/search_label_txt"
+            android:layout_below="@id/search_label_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/search_user_empty"
+            android:layout_centerInParent="true"
+            android:text="There is nothing here."
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ProgressBar
+            android:id="@+id/search_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:indeterminateTint="@color/statusbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

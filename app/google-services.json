@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "87510012546",
+    "firebase_url": "https://krizma-1533193980767.firebaseio.com",
+    "project_id": "krizma-1533193980767",
+    "storage_bucket": "krizma-1533193980767.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87510012546:android:58632e429ccac0b8",
+        "android_client_info": {
+          "package_name": "com.sprint.krizma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87510012546-fkma8elceu25mr7a5o55jjs029ibad5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoJuhb9VV7oaR-GM7HMuj7u6Zm4RQ-QLg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
